@@ -8,11 +8,7 @@ gulp.task('html:dev', () => {
 
 gulp.task('webpack:dev', () => {
   gulp.src(__dirname + '/app/js/client.js')
-    .pipe(webpack({
-      output: {
-        filename: 'bundle.js'
-      }
-    }))
+    .pipe(webpack(require(__dirname + '/webpack.config.js')))
     .pipe(gulp.dest('build/'));
 });
 

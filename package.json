@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "react-rest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,11 +10,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "babel-preset-react": "^6.5.0",
     "gulp": "^3.9.1",
     "webpack": "^1.12.13",
     "webpack-stream": "^3.1.0"
   },
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.3",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
   }
 }

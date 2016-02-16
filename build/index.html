@@ -2,29 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>2 Resource Adventure</title>
+    <title>React</title>
   </head>
-  <body data-ng-app="personApp">
-    <main data-ng-controller="personController">
-      <h1>People are cool I guess!!</h1>
-      <ul>
-        <li data-ng-repeat="person in people">{{person.name}}
-          <button data-ng-click="deletePerson(person)" type="button">Delete Person</button>
-          <button data-ng-click="person.editing = !person.editing">Edit</button>
-          <form data-ng-if="person.editing" data-ng-submit="updatePerson(person)">
-            <input data-ng-model="person.name" type="text">
-            <button type="submit">Update</button>
-          </form>
-        </li>
-      </ul>
-      <form data-ng-submit="createPerson(newPerson)">
-        <input data-ng-model="newPerson.name" type="text">
-        <input type="submit">
-      </form>
-      <p>
-        The number of people in the database: {{peopleCount}}
-      </p>
-    </main>
-    <script src='bundle.js'></script>
+  <body>
+    <h1>People are cool</h1>
+    <div id="get"></div>
+    <div id="new"></div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
